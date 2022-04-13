@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+<meta charset="ISO-8859-1">
+<title>Comtrade Assignment</title>
+<link th:href = "@{/css/style.css}" rel="stylesheet">
+</head>
+<body>
+<nav>
+      <p class="main-text">Comtrade Assignment</p>
+      <img src="img/logo.jpg" alt="Logo" class="logo" />
+      
+      <form modelAttribute="language" action="addLanguage" class="login">
+      <div>
+      <p>Insert data into database</p>
+        <input
+          type="text"
+          placeholder="Language"
+          class="login__input login__input--user"
+          name="name"
+          path="name"
+        />
+        <input
+          type="text"
+          placeholder="Message"
+          class="login__input login__input--pin"
+          name="message"
+          path="message"
+        />
+        <button type="submit" class="login__btn">&rarr;</button>
+      </form>
+      </div>
+    </nav>
+
+    <main class="app">
+      <div class="container">
+        <div class="center">
+          <a class="button-link" href="hello-rest">REST Controller</a>
+          <form action="hello">
+          <input type="text" name="name">
+          <input type="submit" value="Go!">
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <p class="main-text">Nikola Soric for Comtrade 360 Interview</p>
+    </footer>
+</body>
+</html>
